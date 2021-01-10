@@ -17,8 +17,8 @@
 LOCAL_PATH := device/samsung/universal7870-common
 
 # Boot animation
-TARGET_BOOTANIMATION_PRELOAD := true
-TARGET_BOOTANIMATION_TEXTURE_CACHE := true
+# TARGET_BOOTANIMATION_PRELOAD := true
+# TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
@@ -66,8 +66,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/com.samsung.permission.SSENSOR.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.samsung.permission.SSENSOR.xml
 
 # AdvancedDisplay
-PRODUCT_PACKAGES += \
-    AdvancedDisplay
+# PRODUCT_PACKAGES += \
+#     AdvancedDisplay
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -78,7 +78,7 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.usb.default \
     audio.r_submix.default \
-    libtinycompress 
+    libtinycompress
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
@@ -96,8 +96,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0-helper \
     android.hardware.camera.provider@2.5-impl \
     android.hardware.camera.provider@2.5-service \
-    libion_exynos \
-    Snap
+    libion_exynos
+#    Snap
 
 # Camera configurations
 PRODUCT_COPY_FILES += \
@@ -137,8 +137,8 @@ PRODUCT_HOST_PACKAGES += \
     dtbhtoolExynos
 
 # FlipFlap
-PRODUCT_PACKAGES += \
-    FlipFlap
+# PRODUCT_PACKAGES += \
+#     FlipFlap
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -147,8 +147,8 @@ PRODUCT_PACKAGES += \
 # Healthd
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
-    android.hardware.health@2.0-service \
-    chargeonlymode
+    android.hardware.health@2.0-service
+#     chargeonlymode
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -179,7 +179,7 @@ PRODUCT_PACKAGES += \
     ebtables \
     ethertypes \
     libebtc
-    
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -197,8 +197,8 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
 # Offmode charger
-PRODUCT_PACKAGES += \
-    charger_res_images
+# PRODUCT_PACKAGES += \
+#     charger_res_images
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -226,12 +226,12 @@ PRODUCT_PACKAGES += \
     ueventd.rc
 
 # Recorder
-PRODUCT_PACKAGES += \
-    Recorder
+# PRODUCT_PACKAGES += \
+#     Recorder
 
 # Samsung Doze
-PRODUCT_PACKAGES += \
-    SamsungDoze
+# PRODUCT_PACKAGES += \
+#     SamsungDoze
 
 # Seccomp_policy
 PRODUCT_COPY_FILES += \
@@ -246,7 +246,7 @@ PRODUCT_PACKAGES += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.samsung
-    
+
 # Touchscreen
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/AVRCP.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/AVRCP.idc \
